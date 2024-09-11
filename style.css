@@ -1,0 +1,96 @@
+.parent-div {
+  display: flex;
+  gap: 30px;
+}
+
+.editButton1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.active {
+  border-bottom: 3px solid #686D76;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  cursor: pointer;
+  width: 16px; 
+  height: 16px;
+  color: red;
+  opacity: 60%;
+  visibility: hidden; 
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px; 
+}
+
+.icon:hover {
+  opacity: 90%;
+}
+
+.active:hover .icon {
+  visibility: visible; 
+}
+
+.confirmation-ui {
+  display: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1px;
+  border-radius: 4px;
+  gap: 8px;
+}
+
+.confirmation-ui button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 8px;
+}
+
+.confirmation-ui.show {
+  display: flex;
+}
+
+table {
+  margin-top: 30px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid grey;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+.error-border {
+  border-bottom: 3px solid red;
+}
+
+.success-border {
+  border-bottom: 3px solid green;
+}
